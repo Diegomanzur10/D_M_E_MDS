@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="PANTILLA_FINANZAS.png">
+					<h1>MDS</h1>
+					<h3>Introducción intuitiva</h3>
+					<p>
+						<small>Created by Diego Manzur</small>
+					</p>
+				</section>
+				<section>
+					<section data-background="PANTILLA_FINANZAS1.png"> 
+						<h2>Introducción</h2>
+						<br>
+						<p  align="justify"  style="font-size:70%;">Escalamiento Multidimensional es una técnica de análisis multivariado que es usado para la visualización de similitudes/disimilitudes entre datos ploteando los datos en 2D</p>
+						
+						<p  align="justify"  style="font-size:70%;">El objetivo real del Escalamiento Multidimensional es poder visualizar los datos en un espacio dimensional reducido (k dimensiones, donde por facilidades gráficas ese plot es en 2 dimensiones).</p>
+						
+						<p  align="justify"  style="font-size:70%;">El input de este técnica es la matriz distancia (Matriz de Disimilitud) la cual representa la distancia entre 2 pares de objetos.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Medidas de Distacia </h2>
+						<br>
+						<p align="justify" style="font-size: 60%;">Todos los métodos de <em>clustering</em> tienen una cosa en común, para poder llevar a cabo las agrupaciones necesitan definir y cuantificar la similitud entre las observaciones. El término distancia se emplea dentro del contexto del <em>clustering</em> como cuantificación de la similitud o diferencia entre observaciones. Si se representan las observaciones en un espacio <em>p</em> dimensional, siendo <em>p</em> el número de variables asociadas a cada observación, cuando más se asemejen dos observaciones más próximas estarán, de ahí que se emplee el término distancia. La característica que hace del <em>clustering</em> un método adaptable a escenarios muy diversos es que puede emplear cualquier tipo de distancia, lo que permite al investigador escoger la más adecuada para el estudio en cuestión. A continuación, se describen algunas de las más utilizadas. <br><br></p>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Propiedades de Medidas de Distacia </h2>
+						<br>
+						<ul>
+							<li>$$d(p,q) = 0 \Leftrightarrow p=q$$</li>
+							<li>$$d(p,q) = d(q,p)$$</li>
+							<li>$$d(p,r) \leq d(p,q) + d(q,r)$$</li>
+							<li>$$d(p,q) \geq 0 $$</li>
+						</ul>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Distancia Euclidiana </h2>
+						<br>
+						<p  align="justify" style="font-size: 60%;">La distancia euclídea entre dos puntos <em>p</em> y <em>q</em> se define como la longitud del segmento que une ambos puntos. En coordenadas cartesianas, la distancia euclídea se calcula empleando el teorema de Pitágoras. Por ejemplo, en un espacio de dos dimensiones en el que cada punto está definido por las coordenadas <span class="math inline"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 2.78em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.317em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.345em, 1002.23em, 2.595em, -999.998em); top: -2.22em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mo" id="MathJax-Span-3" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-4" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-5" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math-italic; padding-left: 0.188em;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-7" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.225em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.331em; border-left: 0px solid; width: 0px; height: 1.336em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-1"></script></span>, la distancia euclídea entre <em>p</em> y <em>q</em> viene dada por la ecuación:</p>
+						<p> $$d_{euc}(p,q) = \sqrt{(x_p - x_q)^2 + (y_p - y_q)^2}$$ </p>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Distancia Euclidiana </h2>
+						<br>
+						<p style="font-size: 60%;">Esta ecuación puede generalizarse para un espacio euclídeo <em>n</em>-dimensional donde cada punto está definido por un vector de <em>n</em> coordenadas: $$p=(p_1,p_2,p_3,...,p_n)$$  y $$q=(q_1,q_2,q_3,...,q_n)$$</p>
+						
+						<p style="font-size: 60%;"> $$d_{euc}(p,q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2 +...+(p_n - q_n)^2} = \sqrt{ \sum_{i=1}^n (p_i - q_i)^2}$$</p>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Distancia Manhattan - L1 </h2>
+						<br>
+						<p align="justify" style="font-size: 60%;">La distancia de Manhattan, también conocida como <em>taxicab metric</em>, <em>rectilinear distance</em> o <em>L1 distance</em>, define la distancia entre dos puntos <em>p</em> y <em>q</em> como el sumatorio de las diferencias absolutas entre cada dimensión. Esta medida se ve menos afectada por <em>outliers</em> (es más robusta) que la distancia euclídea debido a que no eleva al cuadrado las diferencias.</p>
+						<p style="font-size: 60%;"> $$d_{man}(p,q) = \sum_{i=1}^n |(p_i - q_i)|$$</p>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Distancia Correlación </h2>
+						<br>
+						<p align="justify" style="font-size: 60%;">La correlación es una medida de distancia muy útil cuando la definición de similitud se hace en términos de patrón o forma y no de desplazamiento o magnitud. ¿Qué quiere decir esto? En la imagen del apartado de la distancia euclídea, las dos observaciones tienen exactamente el mismo patrón, la única diferencia es que una de ellas está desplazada 4 unidades por encima de la otra. Si se emplea como medida de similitud 1 menos el valor de la correlación, ambas observaciones se consideran idénticas (su distancia es 0).</p>
+						<p style="font-size: 60%;"> $$d_{cor}(p,q) = 1 - \text{correlacion}(p,q)$$</p>
+						<p align="justify" style="font-size: 60%;">donde la correlación puede ser de distintos tipos (<em>Pearson</em>, <em>Spearman</em>, <em>Kendall</em>…) Correlación lineal.</p>
+					</section>
+
+				</section>
+
+
+				<section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2> Tipos de Algoritmos MDS</h2>
+						<br>
+						<p align="justify" style="font-size: 60%;">Existen principalmente 2 tipos de algoritmos MDS</p>
+
+						<ul align="justify" style="font-size: 60%;">
+							<li>MDS Clásico - PCoA</li>
+								<p align="justify" style="font-size: 100%;">Se basa en la relación de distancia pura y dura de los datos, ya sea euclidiana, L1, correlación... Es muy similar a PCA, solo que PCA hace la transformación de los datos en función de la Matriz de Varianza y Covarianza de los datos, MDS lo hace con base en la Matriz Distancia-Disimilitudes.</p>
+							<li>MDS no métrico</li>
+								<p align="justify" style="font-size: 100%;">Este caso es análogo a una correlación Spearman, donde no me interesa mucho la magnitud de la distancia sino el orden de las distancias, lo cual hace pequeños cambios al momento de generar el plot-2D.</p>
+						</ul>
+					</section>
+
+					<section data-background="PANTILLA_FINANZAS1.png">
+						<h2>Intuición</h2>
+						<img  width="400" height="300" style="max-width:150%;border:0px dotted #545565;" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac5a364c06c41eede6a8689a417c79b0b984046d" border="10"> 
+						<br>
+						<img width="400" height="100" style="max-width:150%;border:0px dotted #545565;" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fd6074e7847292d3d61cdfce7fe135399fea4114">
+
+					</section>
+
+
+				</section>
+			
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				    //{ src: 'plugin/math-katex/math-katex.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
